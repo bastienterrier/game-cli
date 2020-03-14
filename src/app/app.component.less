@@ -1,0 +1,32 @@
+@import '../assets/config/variables.less';
+
+.header {
+  width: 100%;
+  background-color: @primary-dark;
+
+  &__title {
+    text-align: center;
+    color: @white;
+  }
+}
+
+.game-area {
+  display: flex;
+
+  & > * {
+    padding: 0 20px;
+    border: solid @primary 1px;
+  }
+
+  .settings {
+    width: 20%;
+  }
+
+  .cli {
+    width: 40%;
+  }
+
+  .extra-infos {
+    width: 40%;
+  }
+}
