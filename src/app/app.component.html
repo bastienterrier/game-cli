@@ -1,41 +1,8 @@
 <header class="header">
-  <h1 class="header__title">
-    Welcome to Game-CLI !
-  </h1>
+  <h1 class="header__title">Welcome to Game-CLI {{ player.name }}!</h1>
 </header>
 <main class="game-area">
-  <nav class="settings">
-    <h1>Settings</h1>
-
-    <div class="settings__connected-player">
-      <h2>Player</h2>
-      <input [value]="user.name" />
-    </div>
-
-    <div class="settings__connected-player">
-      <h2>Connected players</h2>
-    </div>
-
-    <h2>Chat</h2>
-  </nav>
-  <section class="cli">
-    <p>
-      > Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-      temporibus?<br />
-      > Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-      temporibus?<br />
-      > Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-      temporibus?<br />
-      > Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-      temporibus?<br />
-      > Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-      temporibus?<br />
-      > Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
-      temporibus?<br />
-    </p>
-  </section>
-
-  <aside class="extra-infos">
+  <section class="player-informations">
     <section class="inventory">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus maiores
       voluptates nisi tempore quos illo suscipit consequuntur neque sapiente
@@ -53,12 +20,24 @@
       omnis eum voluptatem impedit.
     </section>
     <section class="map">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus maiores
-      voluptates nisi tempore quos illo suscipit consequuntur neque sapiente
-      perspiciatis numquam hic eum ipsum consectetur, eveniet vel repudiandae,
-      voluptas totam dolor. Magnam doloribus atque dolor repudiandae hic,
-      temporibus, nesciunt assumenda vitae dolorem minima illo ex sapiente,
-      omnis eum voluptatem impedit.
+      <app-map-global [discovered]="player.map.discovered"></app-map-global>
     </section>
-  </aside>
+  </section>
+
+  <section class="battle">
+    <p>
+      > Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+      temporibus?<br />
+      > Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+      temporibus?<br />
+      > Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+      temporibus?<br />
+      > Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+      temporibus?<br />
+      > Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+      temporibus?<br />
+      > Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+      temporibus?<br />
+    </p>
+  </section>
 </main>
